@@ -1,0 +1,8 @@
+body{
+    margin:0;
+    overflow:hidden;
+    background: radial-gradient(circle at center,#1a0033,#000010);
+}
+canvas{
+    display:block;
+}
