@@ -18,7 +18,7 @@ function createTextTargets(){
     tctx.fillStyle = "white";
     tctx.font = "bold 120px Arial";
     tctx.textAlign = "center";
-    tctx.fillText("Te Amo", canvas.width/2, canvas.height/2);
+    tctx.fillText("Te Amo Grace", canvas.width/2, canvas.height/2);
 
     let data = tctx.getImageData(0,0,temp.width,temp.height).data;
 
