@@ -35,7 +35,7 @@ l3 = []
 staff_mails = {
     1: 'deusdenis40@gmail.com',
     2: 'goodluckgyunda@gmail.com',
-    3: 'peterallpet5@gmail.com'
+    3: 'peterallpet5@gmail.comS'
 }
 
 # sender email and Gmail App Password
