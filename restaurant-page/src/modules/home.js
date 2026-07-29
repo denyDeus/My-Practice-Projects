@@ -10,14 +10,20 @@ export default function loadHome() {
   title.textContent = "Delicious Dish Restaurant";
 
   const slogan = document.createElement("p");
-  slogan.textContent =
-    "Experience unforgettable flavours crafted with passion and served with elegance.";
+  slogan.textContent = "Every plate tells a story. Every bite creates a memory.";
+
+  const description = document.createElement("p");
+  description.textContent = "Fresh ingredients, exceptional services, and unforgettable dining experiences."
 
   const button = document.createElement("button");
   button.textContent = "Reserve a Table";
   button.classList.add("hero-btn");
 
-  home.append(title, slogan, button);
+  home.append(
+    title, 
+    slogan, 
+    description, 
+    button);
 
   return home;
 }

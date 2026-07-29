@@ -19,13 +19,24 @@ header {
     top: 0;
     left: 0;
     width: 100%;
-    padding: 20px 40px;
+    padding: 20px 60px;
     z-index: 100;
 }
 
 nav {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    color: white;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.nav-links {
+    display: flex;
     gap: 20px;
 }
 
@@ -104,6 +115,12 @@ nav button:hover {
     margin-bottom: 40px;
 }
 
+.hero p:last-of-type {
+    font-size: 1rem;
+    opacity: .9;
+    margin-bottom: 45px;
+}
+
 /* BUTTON */
 
 .hero-btn {
@@ -131,4 +148,55 @@ nav button:hover {
     background: #d4a373;
     transform: translateY(-4px);
     box-shadow: 0 12px 30px rgba(0,0,0,.35);
+}
+
+.menu{
+
+    display: grid;
+
+    grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+
+    gap: 30px;
+
+    padding: 100px;
+}
+
+.menu-card{
+
+    background:white;
+
+    padding: 30px;
+
+    border-radius: 20px;
+
+    box-shadow: 0 10px 30px rgba(0,0,0,.12);
+
+    transition:.3s;
+}
+
+.menu-card:hover{
+
+    transform: translateY(-10px);
+
+    box-shadow: 0 20px 40px rgba(0,0,0,.18);
+}
+
+.menu-card h3{
+
+    color:#8B4513;
+
+    margin-bottom: 15px;
+}
+
+.menu-card span{
+
+    display: block;
+
+    margin-top: 20px;
+
+    font-weight: bold;
+
+    color:#D4A373;
+
+    font-size: 1.2rem;
 }

@@ -1,25 +1,35 @@
-export default function loadMenu() {
-  const menu = document.createElement("div");
-  menu.classList.add("menu");
+function createCard(name, description, price) {
+  const card = document.createElement("div");
+  card.classList.add("menu-card");
 
-  const heading = document.createElement("h1");
-  heading.textContent = "Our Menu";
+  const title = document.createElement("h3");
+  title.textContent = name;
 
-  const items = [
-    "🍕 Margherita Pizza",
-    "🍔 Classic Beef Burger",
-    "🍝 Creamy Alfredo Pasta",
-    "🥗 Caesar Salad",
-    "🍰 Chocolate Lava Cake"
-  ];
+  const desc = document.createElement("p");
+  desc.textContent = description;
 
-  menu.appendChild(heading);
+  const cost = document.createElement("span");
+  cost.textContent = price;
 
-  items.forEach(item => {
-    const food = document.createElement("p");
-    food.textContent = item;
-    menu.appendChild(food);
-  });
+  card.append(title, desc, cost);
 
-  return menu;
+  menu.append(
+    createCard(
+        "Grilled Steak",
+        "Juicy premium beef served with seasonal vegetables",
+        "£18.99"
+    ),
+    createCard(
+        "Margherita Pizza",
+        "Fresh mozzarella, basil and tomato sauce.",
+        "£12.99"
+    ),
+    createCard(
+        "Chocolate Lava Cake",
+        "Warm chocolate cake with vanilla ice cream.",
+        "£6.50"
+    )
+  );
+
+  return card;
 }
