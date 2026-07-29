@@ -9,23 +9,35 @@ import "@fontsource/poppins";
 
 const content = document.getElementById("content");
 
-function render(page) {
-  content.textContent = "";
-  content.appendChild(page());
+const logo = document.querySelector(".logo");
+
+const homeBtn = document.getElementById("home-btn");
+const menuBtn = document.getElementById("menu-btn");
+const contactBtn = document.getElementById("contact-btn");
+
+function loadPage(page, darkLogo = false) {
+    content.textContent = "";
+    content.appendChild(page());
+
+    if (darkLogo) {
+        logo.classList.add("dark");
+    } else {
+        logo.classList.remove("dark");
+    }
 }
 
-// Load Home by default
-render(loadHome);
+// Load Home first
+loadPage(loadHome);
 
-// Navigation buttons
-document.getElementById("home-btn").addEventListener("click", () => {
-  render(loadHome);
+// Navigation
+homeBtn.addEventListener("click", () => {
+    loadPage(loadHome);
 });
 
-document.getElementById("menu-btn").addEventListener("click", () => {
-  render(loadMenu);
+menuBtn.addEventListener("click", () => {
+    loadPage(loadMenu, true);
 });
 
-document.getElementById("contact-btn").addEventListener("click", () => {
-  render(loadContact);
+contactBtn.addEventListener("click", () => {
+    loadPage(loadContact, true);
 });
