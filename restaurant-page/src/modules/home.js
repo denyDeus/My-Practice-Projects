@@ -1,18 +1,23 @@
+import heroImage from "../images/hero.jpg";
+
 export default function loadHome() {
-  const home = document.createElement("div");
-  home.classList.add("home");
+  const home = document.createElement("section");
+  home.classList.add("hero");
+
+  home.style.backgroundImage = `url(${heroImage})`;
 
   const title = document.createElement("h1");
   title.textContent = "Delicious Dish Restaurant";
 
-  const subtitle = document.createElement("p");
-  subtitle.textContent =
-    "Where every meal is crafted with passion and served with love.";
+  const slogan = document.createElement("p");
+  slogan.textContent =
+    "Experience unforgettable flavours crafted with passion and served with elegance.";
 
   const button = document.createElement("button");
   button.textContent = "Reserve a Table";
+  button.classList.add("hero-btn");
 
-  home.append(title, subtitle, button);
+  home.append(title, slogan, button);
 
   return home;
 }

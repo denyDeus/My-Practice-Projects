@@ -4,6 +4,9 @@ import loadHome from "./modules/home.js";
 import loadMenu from "./modules/menu.js";
 import loadContact from "./modules/contact.js";
 
+import "@fontsource/playfair-display";
+import "@fontsource/poppins";
+
 const content = document.getElementById("content");
 
 function render(page) {

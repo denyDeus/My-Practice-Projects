@@ -1,25 +1,134 @@
-body {
-  margin: 0;
-  font-family: Arial, Helvetica, sans-serif;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
+/* BODY */
+
+body {
+    font-family: "Poppins", sans-serif;
+    background: #faf3e0;
+    color: #2c2c2c;
+}
+
+/* HEADER */
+
 header {
-  background-color: #333;
-  padding: 20px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 40px;
+    z-index: 100;
 }
 
 nav {
-  display: flex;
-  justify-content: center;
-  gap: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
 }
 
-button {
-  padding: 10px 20px;
-  cursor: pointer;
+nav button {
+    background: rgba(255,255,255,0.95);
+    border: none;
+    padding: 12px 28px;
+    border-radius: 30px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: 0.3s ease;
 }
 
-#content {
-  padding: 40px;
-  text-align: center;
+nav button:hover {
+    background: #d4a373;
+    transform: translateY(-3px);
+}
+
+/* HERO */
+
+.hero {
+    position: relative;
+
+    min-height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    overflow: hidden;
+
+    padding: 20px;
+}
+
+.hero::before {
+    content: "";
+
+    position: absolute;
+    inset: 0;
+
+    background: rgba(0,0,0,0.55);
+}
+
+/* Keep content above overlay */
+
+.hero h1,
+.hero p,
+.hero button {
+    position: relative;
+    z-index: 2;
+}
+
+/* TITLE */
+
+.hero h1 {
+    font-family: "Playfair Display", serif;
+    font-size: 5rem;
+    color: white;
+    margin-bottom: 25px;
+}
+
+/* DESCRIPTION */
+
+.hero p {
+    color: white;
+    font-size: 1.4rem;
+    max-width: 750px;
+    line-height: 1.8;
+    margin-bottom: 40px;
+}
+
+/* BUTTON */
+
+.hero-btn {
+    background: #8b4513;
+    color: white;
+
+    border: none;
+
+    padding: 18px 45px;
+
+    border-radius: 50px;
+
+    font-size: 18px;
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: all .3s ease;
+
+    position: relative;
+    z-index: 2;
+}
+
+.hero-btn:hover {
+    background: #d4a373;
+    transform: translateY(-4px);
+    box-shadow: 0 12px 30px rgba(0,0,0,.35);
 }
