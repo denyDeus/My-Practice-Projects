@@ -7,11 +7,13 @@ import loadContact from "./modules/contact.js";
 
 import "@fontsource/playfair-display";
 import "@fontsource/poppins";
+import "@fortawesome/fontawesome-free/css/all.min.css";
+
+import createFooter from "./modules/footer";
 
 const header = document.querySelector("header");
-
 const content = document.getElementById("content");
-
+const footer = document.getElementById("footer");
 const logo = document.querySelector(".logo");
 
 const homeBtn = document.getElementById("home-btn");
@@ -20,11 +22,14 @@ const menuBtn = document.getElementById("menu-btn");
 const contactBtn = document.getElementById("contact-btn");
 
 function loadPage(page, darkLogo = false) {
+    window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+    });
 
     content.style.opacity = "0";
 
     setTimeout(() => {
-
         content.textContent = "";
         content.appendChild(page());
 
@@ -35,9 +40,7 @@ function loadPage(page, darkLogo = false) {
         }
 
         content.style.opacity = "1";
-
     }, 150);
-
 }
 
 function setActiveButton(button) {
@@ -47,6 +50,10 @@ function setActiveButton(button) {
 
 // Load Home first
 loadPage(loadHome);
+
+// Create the footer once
+footer.appendChild(createFooter());
+setActiveButton(homeBtn);
 
 // Navigation
 homeBtn.addEventListener("click", () => {

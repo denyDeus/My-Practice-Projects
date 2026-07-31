@@ -1,73 +1,70 @@
 export default function loadContact() {
-    const contact = document.createElement("section");
-    contact.classList.add("contact");
+  const contact = document.createElement("section");
+  contact.classList.add("contact");
 
-    const heading = document.createElement("h1");
-    heading.textContent = "Contact Us";
+  const heading = document.createElement("h1");
+  heading.textContent = "Contact Us";
 
-    const intro = document.createElement("p");
-    intro.textContent = "We'd love to welcome you. Visit us, give us a call, or send us an email.";
+  const subtitle = document.createElement("p");
+  subtitle.classList.add("contact-subtitle");
+  subtitle.textContent =
+    "We'd love to serve you. Reserve a table or reach out anytime.";
 
-    const infoGrid = document.createElement("div");
-    infoGrid.classList.add("contact-grid");
+  const container = document.createElement("div");
+  container.classList.add("contact-container");
 
-    const details = [
-        {
-            icon: "📍",
-            title: "Address",
-            text: "Magomeni Mapipa, Dar es Salaam"
-        },
-        {
-            icon: "📞",
-            title: "Phone",
-            text: "+255 670 345 512"
-        },
-        {
-            icon: "📧",
-            title: "Email",
-            text: "hello@deliciousdish.com"
-        },
-        {
-            icon: "🕒",
-            title: "Opening Hours",
-            text: "Mon–Fri: 9:00 AM – 10:00 PM\nSat–Sun: 10:00 AM – Midnight"
-        }
-    ];
+  // Left Side
+  const info = document.createElement("div");
+  info.classList.add("contact-info");
 
-    details.forEach(item => {
-        const card = document.createElement("div");
-        card.classList.add("contact-card");
+  info.innerHTML = `
+      <div class="contact-item">
+          <i class="fas fa-map-marker-alt"></i>
+          <div>
+              <h3>Address</h3>
+              <p>Kinondoni, Dsm, TZ</p>
+          </div>
+      </div>
 
-        const icon = document.createElement("div");
-        icon.classList.add("contact-icon");
-        icon.textContent = item.icon;
+      <div class="contact-item">
+          <i class="fas fa-phone"></i>
+          <div>
+              <h3>Phone</h3>
+              <p>+255 764 263 871</p>
+          </div>
+      </div>
 
-        const title = document.createElement("h3");
-        title.textContent = item.title;
+      <div class="contact-item">
+          <i class="fas fa-envelope"></i>
+          <div>
+              <h3>Email</h3>
+              <p>hello@deliciousdish.com</p>
+          </div>
+      </div>
 
-        const text = document.createElement("p");
-        text.textContent = item.text;
-        text.style.whiteSpace = "pre-line";
+      <div class="contact-item">
+          <i class="fas fa-clock"></i>
+          <div>
+              <h3>Opening Hours</h3>
+              <p>Mon - Sun : 9:00 AM - 11:00 PM</p>
+          </div>
+      </div>
+  `;
 
-        card.append(icon, title, text);
-        infoGrid.appendChild(card);
-    });
+  // Right Side
+  const form = document.createElement("form");
+  form.classList.add("contact-form");
 
-    const reserveBtn = document.createElement("button");
-    reserveBtn.classList.add("reserve-btn");
-    reserveBtn.textContent = "Reserve a Table";
+  form.innerHTML = `
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Email Address" required>
+      <textarea rows="6" placeholder="Your Message"></textarea>
+      <button type="submit">Send Message</button>
+  `;
 
-    const map = document.createElement("div");
-    map.classList.add("map-placeholder");
-    map.textContent = "📍 Interactive Map Coming Soon";
+  container.append(info, form);
 
-    contact.append(
-        heading,
-        intro,
-        infoGrid,
-        reserveBtn,
-        map
-    );
+  contact.append(heading, subtitle, container);
 
-    return contact;
+  return contact;
 }
