@@ -398,6 +398,165 @@ nav button:active {
     transform:scale(1.03);
 }
 
+/* WHY CHOOSE US */
+
+.about-features {
+
+    padding: 110px 8%;
+
+    background: #faf3e0;
+
+    text-align: center;
+}
+
+.about-features h2 {
+
+    font-family: "Playfair Display", serif;
+
+    font-size: 3rem;
+
+    color: #8B4513;
+
+    margin-bottom: 15px;
+}
+
+.features-subtitle {
+
+    max-width: 700px;
+
+    margin: 0 auto 60px;
+
+    color: #666;
+
+    line-height: 1.8;
+
+    font-size: 1.05rem;
+}
+
+
+/* FEATURE GRID */
+
+.features-grid {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(4, 1fr);
+
+    gap: 30px;
+}
+
+
+/* FEATURE CARD */
+
+.feature-card {
+
+    background: white;
+
+    padding: 40px 25px;
+
+    border-radius: 22px;
+
+    box-shadow:
+        0 15px 35px rgba(0,0,0,.08);
+
+    transition:
+        transform .35s ease,
+        box-shadow .35s ease;
+}
+
+.feature-card:hover {
+
+    transform: translateY(-10px);
+
+    box-shadow:
+        0 25px 50px rgba(0,0,0,.14);
+}
+
+
+/* FEATURE ICON */
+
+.feature-icon {
+
+    width: 70px;
+
+    height: 70px;
+
+    margin: 0 auto 20px;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    border-radius: 50%;
+
+    background: #faf3e0;
+
+    font-size: 2rem;
+}
+
+
+.feature-card h3 {
+
+    color: #8B4513;
+
+    font-size: 1.25rem;
+
+    margin-bottom: 15px;
+}
+
+
+.feature-card p {
+
+    color: #666;
+
+    line-height: 1.7;
+
+    font-size: .95rem;
+}
+
+/* ABOUT QUOTE */
+
+.about-quote {
+
+    padding: 110px 8%;
+
+    text-align: center;
+
+    background: #8B4513;
+
+    color: white;
+}
+
+.about-quote blockquote {
+
+    max-width: 900px;
+
+    margin: 0 auto 40px;
+
+    font-family: "Playfair Display", serif;
+
+    font-size: 2.3rem;
+
+    line-height: 1.5;
+
+    font-style: italic;
+}
+
+.about-quote .reserve-btn {
+
+    background: #D4A373;
+}
+
+.about-quote .reserve-btn:hover {
+
+    background: white;
+
+    color: #8B4513;
+}
+
 .story-content{
     max-width:560px;
 }
@@ -901,5 +1060,133 @@ opacity:1;
 transform:translateY(0);
 
 }
+
+}
+
+/* ABOUT RESPONSIVE DESIGN */
+
+@media (max-width: 1100px) {
+
+    .features-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .about-story {
+        gap: 40px;
+    }
+
+}
+
+
+@media (max-width: 768px) {
+
+    header {
+        padding: 15px 25px;
+    }
+
+    .about {
+        padding: 100px 5% 60px;
+    }
+
+    .about-hero {
+        padding: 130px 20px 70px;
+    }
+
+    .about-hero h1 {
+        font-size: 3rem;
+    }
+
+    .about-hero p {
+        font-size: 1rem;
+    }
+
+    .about-story {
+        width: 100%;
+        grid-template-columns: 1fr;
+        gap: 40px;
+        margin-bottom: 70px;
+    }
+
+    .about-story img {
+        height: 400px;
+    }
+
+    .story-content {
+        max-width: 100%;
+    }
+
+    .story-content h2 {
+        font-size: 2.5rem;
+    }
+
+    .about-stats {
+        grid-template-columns: repeat(2, 1fr);
+        padding: 70px 5%;
+    }
+
+    .stat-card {
+        padding: 35px 20px;
+    }
+
+    .stat-card h2 {
+        font-size: 2.5rem;
+    }
+
+    .about-chefs {
+        padding: 80px 5%;
+    }
+
+    .about-chefs h2 {
+        font-size: 2.5rem;
+    }
+
+    .features-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .about-features {
+        padding: 80px 5%;
+    }
+
+    .about-features h2 {
+        font-size: 2.5rem;
+    }
+
+    .about-quote {
+        padding: 80px 5%;
+    }
+
+    .about-quote blockquote {
+        font-size: 1.7rem;
+    }
+
+}
+
+
+@media (max-width: 480px) {
+
+    .about-hero h1 {
+        font-size: 2.4rem;
+    }
+
+    .about-story img {
+        height: 300px;
+    }
+
+    .about-stats {
+        grid-template-columns: 1fr;
+    }
+
+    .stat-card h2 {
+        font-size: 2.3rem;
+    }
+
+    .chef-card img {
+        height: 280px;
+    }
+
+    .about-quote blockquote {
+        font-size: 1.4rem;
+    }
 
 }

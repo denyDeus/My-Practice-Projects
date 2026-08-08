@@ -48,6 +48,11 @@ function setActiveButton(button) {
     button.classList.add("active");
 }
 
+function goToContact() {
+    loadPage(loadContact, true);
+    setActiveButton(contactBtn);
+}
+
 // Load Home first
 loadPage(loadHome);
 
@@ -62,19 +67,16 @@ homeBtn.addEventListener("click", () => {
 });
 
 aboutBtn.addEventListener("click", () => {
-    loadPage(loadAbout, true);
+    loadPage(() => loadAbout(goToContact), true);
     setActiveButton(aboutBtn);
-})
+});
 
 menuBtn.addEventListener("click", () => {
     loadPage(loadMenu, true);
     setActiveButton(menuBtn);
 });
 
-contactBtn.addEventListener("click", () => {
-    loadPage(loadContact, true);
-    setActiveButton(contactBtn);
-});
+contactBtn.addEventListener("click", goToContact);
 
 window.addEventListener("scroll", () => {
     if (window.scrollY > 50) {
