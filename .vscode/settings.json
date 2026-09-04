@@ -10,11 +10,12 @@
       "ssh": "Disabled",
       "previewLimit": 50,
       "server": "localhost",
-      "port": 3306,
+      "port": 33060,
       "driver": "MySQL",
-      "name": "Local Host",
-      "database": "sys",
-      "username": "localhost",
+      "name": "MySQL Local",
+      "database": "world",
+      "username": "root",
+      "password": "@Denis_01",
       "connectionTimeout": 30
     }
   ]
