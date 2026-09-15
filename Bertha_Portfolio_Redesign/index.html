@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Professional portfolio of Bertha Magomere — Hydrogeologist, water and climate professional, researcher, innovator and leader.">
+  <title>Bertha Magomere | Hydrogeologist & Water Professional</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header class="site-header" id="top">
+    <a class="brand" href="#home" aria-label="Bertha Magomere home">
+      <span class="brand-mark">BM</span>
+      <span>
+        <strong>Bertha Magomere</strong>
+        <small>Water • Climate • Research</small>
+      </span>
+    </a>
+
+    <button class="menu-toggle" id="menuToggle" aria-label="Open navigation" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+
+    <nav class="site-nav" id="siteNav">
+      <a href="#about">About</a>
+      <a href="#research">Research</a>
+      <a href="#experience">Experience</a>
+      <a href="#initiatives">Initiatives</a>
+      <a href="#recognition">Recognition</a>
+      <a href="#contact">Contact</a>
+      <a class="nav-cv" href="assets/documents/Bertha-Magomere-CV.pdf" target="_blank" rel="noopener">View CV</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-copy">
+        <p class="eyebrow">HYDROGEOLOGIST • WATER & CLIMATE PROFESSIONAL</p>
+        <h1>Turning knowledge into <em>sustainable</em> impact.</h1>
+        <p class="hero-text">
+          I am Bertha Magomere, passionate about water resource management,
+          climate resilience, innovation and community empowerment.
+        </p>
+
+        <div class="hero-actions">
+          <a class="button button-primary" href="#research">Explore my work <span>↗</span></a>
+          <a class="button button-ghost" href="assets/documents/Bertha-Magomere-CV.pdf" target="_blank" rel="noopener">Download CV</a>
+        </div>
+
+        <div class="hero-meta">
+          <span>Dar es Salaam, Tanzania</span>
+          <span>English & Swahili</span>
+        </div>
+      </div>
+
+      <div class="hero-visual" aria-hidden="true">
+        <div class="hero-image-frame">
+          <img src="assets/images/hero.png" alt="">
+        </div>
+        <div class="hero-accent"></div>
+      </div>
+    </section>
+
+    <section class="intro-strip">
+      <div>
+        <span class="strip-label">FOCUS</span>
+        <strong>Water resources</strong>
+      </div>
+      <div>
+        <span class="strip-label">FOCUS</span>
+        <strong>Climate resilience</strong>
+      </div>
+      <div>
+        <span class="strip-label">FOCUS</span>
+        <strong>Research & innovation</strong>
+      </div>
+      <div>
+        <span class="strip-label">FOCUS</span>
+        <strong>Youth empowerment</strong>
+      </div>
+    </section>
+
+    <section class="section about-section" id="about">
+      <div class="section-heading">
+        <p class="eyebrow">01 — ABOUT</p>
+        <h2>A professional profile built around water, people and possibility.</h2>
+      </div>
+
+      <div class="about-grid">
+        <div class="about-photo">
+          <img src="assets/images/about.jpg" alt="Bertha Magomere outdoors">
+          <div class="photo-note">Water & climate advocate</div>
+        </div>
+
+        <div class="about-copy">
+          <p class="lead">
+            Bertha Magomere is a Hydrogeologist & Accountant with an interest in
+            sustainable water solutions, climate change awareness and environmental resilience.
+          </p>
+          <p>
+            Her work combines technical interests in water with leadership,
+            creativity, public speaking and community-focused innovation. She is
+            committed to inspiring and uplifting the next generation through
+            innovation, creativity and self-reliance.
+          </p>
+
+          <div class="fact-grid">
+            <article>
+              <span class="fact-number">01</span>
+              <h3>Hydrogeology</h3>
+              <p>Water-focused technical knowledge and interest in sustainable resource management.</p>
+            </article>
+            <article>
+              <span class="fact-number">02</span>
+              <h3>Leadership</h3>
+              <p>Strategic planning, decision-making and supervision through initiative-led work.</p>
+            </article>
+            <article>
+              <span class="fact-number">03</span>
+              <h3>Communication</h3>
+              <p>Public speaking, presentations, program hosting and community engagement.</p>
+            </article>
+            <article>
+              <span class="fact-number">04</span>
+              <h3>Innovation</h3>
+              <p>Using creativity and youth-led initiatives to support the water sector.</p>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section research-section" id="research">
+      <div class="section-heading split-heading">
+        <div>
+          <p class="eyebrow">02 — RESEARCH & PUBLICATIONS</p>
+          <h2>A dedicated space for scientific work.</h2>
+        </div>
+        <p>
+          Research papers, journal articles, conference papers and reports can be
+          added here as Bertha's publication record grows.
+        </p>
+      </div>
+
+      <div class="research-controls" role="tablist" aria-label="Publication filters">
+        <button class="filter active" data-filter="all">All</button>
+        <button class="filter" data-filter="research-paper">Research Papers</button>
+        <button class="filter" data-filter="journal-article">Journal Articles</button>
+        <button class="filter" data-filter="conference-paper">Conference Papers</button>
+        <button class="filter" data-filter="report">Reports</button>
+      </div>
+
+      <div class="publication-grid" id="publicationGrid"></div>
+
+      <div class="publication-empty" id="publicationEmpty">
+        <span class="empty-icon">+</span>
+        <h3>Publications will appear here</h3>
+        <p>
+          Add verified titles, abstracts, authors, publication years and PDF/DOI
+          links to <code>data/publications.js</code>.
+        </p>
+      </div>
+    </section>
+
+    <section class="section experience-section" id="experience">
+      <div class="section-heading">
+        <p class="eyebrow">03 — EXPERIENCE</p>
+        <h2>Leadership with a practical, community-facing approach.</h2>
+      </div>
+
+      <div class="timeline">
+        <article class="timeline-item">
+          <div class="timeline-marker">01</div>
+          <div class="timeline-content">
+            <span class="timeline-label">FOUNDER & CEO</span>
+            <h3>Mimi Ni Maji Hub</h3>
+            <p>
+              Leads a youth-led organization fostering innovation and creativity
+              in the water sector, with responsibilities including decision-making,
+              strategic planning and supervision of daily activities.
+            </p>
+          </div>
+        </article>
+
+        <article class="timeline-item">
+          <div class="timeline-marker">02</div>
+          <div class="timeline-content">
+            <span class="timeline-label">PROGRAM SENIOR CONSULTANT</span>
+            <h3>Student Field & Experience</h3>
+            <p>
+              Connects university and college students to part-time jobs and
+              internship opportunities while delivering weekly presentations
+              on the importance of gaining practical experience before graduation.
+            </p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section initiatives-section" id="initiatives">
+      <div class="section-heading split-heading">
+        <div>
+          <p class="eyebrow">04 — INITIATIVES</p>
+          <h2>Work that moves beyond the page.</h2>
+        </div>
+        <p>
+          A visual showcase for the initiatives, collaboration and public-facing
+          work that complement Bertha's academic and professional profile.
+        </p>
+      </div>
+
+      <div class="initiative-grid">
+        <article class="initiative-card initiative-large">
+          <img src="assets/images/innovation.png" alt="Bertha Magomere facilitating a collaborative activity">
+          <div class="initiative-overlay">
+            <span>INNOVATION</span>
+            <h3>Mimi Ni Maji Hub</h3>
+            <p>Youth-led creativity and innovation in the water sector.</p>
+          </div>
+        </article>
+
+        <article class="initiative-card">
+          <img src="assets/images/leadership.png" alt="Bertha Magomere working with a group">
+          <div class="initiative-overlay">
+            <span>LEADERSHIP</span>
+            <h3>Collaborative leadership</h3>
+            <p>Creating space for ideas, learning and participation.</p>
+          </div>
+        </article>
+
+        <article class="initiative-card">
+          <img src="assets/images/speaking.png" alt="Bertha Magomere speaking at an event">
+          <div class="initiative-overlay">
+            <span>COMMUNICATION</span>
+            <h3>Speaking & engagement</h3>
+            <p>Presentations, public speaking and advocacy.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section recognition-section" id="recognition">
+      <div class="recognition-grid">
+        <div class="recognition-copy">
+          <p class="eyebrow">05 — RECOGNITION</p>
+          <span class="recognition-year">2025</span>
+          <h2>Young Scientific Researcher of the Year</h2>
+          <p>
+            Recognition that forms an important part of Bertha's developing
+            scientific and professional profile.
+          </p>
+          <a class="text-link" href="#research">View research space <span>→</span></a>
+        </div>
+
+        <div class="recognition-image">
+          <img src="assets/images/awards.png" alt="Bertha Magomere receiving recognition at a Maji Scientific Conference">
+          <span class="image-caption">Maji Scientific Conference</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section education-section" id="education">
+      <div class="section-heading">
+        <p class="eyebrow">06 — EDUCATION & EXPERTISE</p>
+        <h2>Academic foundations and practical strengths.</h2>
+      </div>
+
+      <div class="education-grid">
+        <article class="education-card">
+          <span>01</span>
+          <h3>Water Resource Management</h3>
+          <p>Water Institute</p>
+        </article>
+        <article class="education-card">
+          <span>02</span>
+          <h3>Hydrogeology</h3>
+          <p>Water-focused technical discipline</p>
+        </article>
+        <article class="education-card">
+          <span>03</span>
+          <h3>Accounting & Finance</h3>
+          <p>Tumaini University</p>
+        </article>
+        <article class="education-card">
+          <span>04</span>
+          <h3>Core strengths</h3>
+          <p>Leadership • Creativity • Public Speaking • Critical Thinking • Innovation</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="contact-section" id="contact">
+      <div class="contact-inner">
+        <div>
+          <p class="eyebrow">07 — CONTACT</p>
+          <h2>Let's connect around ideas that matter.</h2>
+          <p>
+            For professional opportunities, research collaboration, speaking
+            engagements or water and climate initiatives, get in touch.
+          </p>
+        </div>
+
+        <div class="contact-details">
+          <a href="mailto:magomerebertha@gmail.com">magomerebertha@gmail.com</a>
+          <a href="tel:+255675112547">+255 675 112 547</a>
+          <span>Dar es Salaam, Tanzania</span>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <span>© <span id="year"></span> Bertha Magomere</span>
+    <a href="#top">Back to top ↑</a>
+  </footer>
+
+  <script src="data/publications.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>
