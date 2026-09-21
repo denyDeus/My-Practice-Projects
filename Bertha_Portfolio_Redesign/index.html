@@ -3,147 +3,476 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Professional portfolio of Bertha Magomere — Hydrogeologist, water and climate professional, researcher, innovator and leader.">
-  <title>Bertha Magomere | Hydrogeologist & Water Professional</title>
+  <meta name="description" content="Official portfolio of Bertha Magomere — Hydrogeologist, Accountant, Founder & CEO at Mimi Ni Maji Hub, Young Scientific Researcher of the Year, and Climate & Gender Advocate based in Dar es Salaam, Tanzania.">
+  <meta name="keywords" content="Bertha Magomere, Hydrogeologist, Water Resource Management, IPI2Win, Interpex, PQWT, Accountant, Climate Change, Mimi Ni Maji Hub, TUCASA, SheTech, Tanzania">
+  <meta name="author" content="Bertha Magomere">
 
+  <!-- Open Graph / Social Media -->
+  <meta property="og:title" content="Bertha Magomere | Hydrogeologist & Accountant">
+  <meta property="og:description" content="At the intersection of Water Science, Climate Resilience, Technology, and Gender Inclusion.">
+  <meta property="og:image" content="assets/images/hero.png">
+  <meta property="og:type" content="website">
+
+  <title>Bertha Magomere | Hydrogeologist & Accountant</title>
+
+  <!-- Typography -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+
+  <!-- EmailJS SDK -->
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+  <!-- Stylesheet -->
   <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
+  <!-- Header / Navigation -->
   <header class="site-header" id="top">
-    <a class="brand" href="#home" aria-label="Bertha Magomere home">
+    <a class="brand" href="#home" aria-label="Bertha Magomere Home">
       <span class="brand-mark">BM</span>
       <span>
         <strong>Bertha Magomere</strong>
-        <small>Water • Climate • Research</small>
+        <small>Hydrogeologist & Accountant</small>
       </span>
     </a>
 
-    <button class="menu-toggle" id="menuToggle" aria-label="Open navigation" aria-expanded="false">
+    <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation menu" aria-expanded="false">
       <span></span><span></span><span></span>
     </button>
 
     <nav class="site-nav" id="siteNav">
       <a href="#about">About</a>
-      <a href="#research">Research</a>
+      <a href="#toolkit">Technical Skills</a>
+      <a href="#initiatives">Programs & Impact</a>
       <a href="#experience">Experience</a>
-      <a href="#initiatives">Initiatives</a>
+      <a href="#advocacy">Media & Advocacy</a>
+      <a href="#research">Research</a>
       <a href="#recognition">Recognition</a>
       <a href="#contact">Contact</a>
-      <a class="nav-cv" href="assets/documents/Bertha-Magomere-CV.pdf" target="_blank" rel="noopener">View CV</a>
+      <a class="nav-cv" href="assets/documents/Bertha-Magomere-CV.pdf" target="_blank" rel="noopener">Download CV</a>
     </nav>
   </header>
 
   <main>
+    <!-- Hero Section -->
     <section class="hero" id="home">
       <div class="hero-copy">
-        <p class="eyebrow">HYDROGEOLOGIST • WATER & CLIMATE PROFESSIONAL</p>
-        <h1>Turning knowledge into <em>sustainable</em> impact.</h1>
+        <p class="eyebrow">HYDROGEOLOGIST • ACCOUNTANT • CLIMATE & GENDER ADVOCATE</p>
+        <h1>Turning scientific knowledge into <em>sustainable</em> impact.</h1>
         <p class="hero-text">
-          I am Bertha Magomere, passionate about water resource management,
-          climate resilience, innovation and community empowerment.
+          I am Bertha Magomere — Founder & CEO of Mimi Ni Maji Hub. My work sits at the vital nexus of
+          <strong>Water Science (H₂O)</strong>, <strong>Climate Resilience</strong>, <strong>Technology</strong>, and <strong>Gender Equity</strong>,
+          combining technical groundwater geophysics with sound financial governance.
         </p>
 
         <div class="hero-actions">
-          <a class="button button-primary" href="#research">Explore my work <span>↗</span></a>
+          <a class="button button-primary" href="#toolkit">Explore Toolkit <span>↗</span></a>
           <a class="button button-ghost" href="assets/documents/Bertha-Magomere-CV.pdf" target="_blank" rel="noopener">Download CV</a>
+          <a class="button button-whatsapp" href="https://wa.me/255675112547" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
+            <svg class="icon" viewBox="0 0 24 24" width="18" height="18" fill="currentColor">
+              <path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.711 2.599 2.679-.702c.97.53 1.761.816 2.781.816 3.18 0 5.767-2.587 5.767-5.766.001-3.182-2.585-5.8-5.767-5.8zm3.377 8.205c-.141.396-.713.743-1.002.774-.27.028-.619.124-2.033-.464-1.705-.708-2.778-2.457-2.864-2.57-.084-.115-.689-.918-.689-1.752 0-.834.437-1.244.593-1.414.155-.17.339-.212.452-.212.113 0 .226.002.325.006.104.005.244-.039.381.292.141.339.48 1.173.523 1.258.042.085.071.184.014.298-.056.113-.085.184-.17.283-.085.099-.178.222-.254.298-.085.085-.174.177-.075.347.099.17.439.724.942 1.172.648.577 1.194.756 1.364.841.17.085.269.071.368-.042.099-.113.424-.495.537-.665.113-.17.226-.142.381-.085.156.057.989.466 1.159.551.17.085.283.127.325.198.042.071.042.41-.099.806zM12 2C6.477 2 2 6.477 2 12c0 1.954.561 3.78 1.533 5.325L2 22l4.81-1.493C8.28 21.439 10.07 22 12 22c5.523 0 10-4.477 10-10S17.523 2 12 2zm0 18.2c-1.636 0-3.15-.487-4.422-1.325l-.317-.208-3.085.958.977-3.007-.225-.333C4.04 14.975 3.5 13.535 3.5 12c0-4.687 3.813-8.5 8.5-8.5s8.5 3.813 8.5 8.5-3.813 8.5-8.5 8.5z"/>
+            </svg>
+            <span>WhatsApp</span>
+          </a>
         </div>
 
         <div class="hero-meta">
           <span>Dar es Salaam, Tanzania</span>
-          <span>English & Swahili</span>
+          <span>Fluent in English & Swahili</span>
+          <span class="badge-status">Open to Research & Consulting</span>
+        </div>
+
+        <!-- Social Profiles -->
+        <div class="hero-socials">
+          <a href="https://www.linkedin.com/in/bertha-magomere-a64207370?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" rel="noopener" aria-label="Bertha Magomere on LinkedIn" class="social-chip">
+            <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z"/></svg>
+            LinkedIn
+          </a>
+          <a href="https://www.instagram.com/bertha_magomere?igsh=aXR5Z251ZWxzZ2pw" target="_blank" rel="noopener" aria-label="Bertha Magomere on Instagram" class="social-chip">
+            <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+            Instagram
+          </a>
+          <a href="mailto:magomerebertha@gmail.com" class="social-chip">
+            <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+            Email
+          </a>
         </div>
       </div>
 
       <div class="hero-visual" aria-hidden="true">
         <div class="hero-image-frame">
-          <img src="assets/images/hero.png" alt="">
+          <img src="assets/images/hero.png" alt="Bertha Magomere portrait">
         </div>
         <div class="hero-accent"></div>
       </div>
     </section>
 
+    <!-- Key Focus Pillars -->
     <section class="intro-strip">
       <div>
-        <span class="strip-label">FOCUS</span>
-        <strong>Water resources</strong>
+        <span class="strip-label">CORE FOCUS</span>
+        <strong>Water (H₂O) Stewardship</strong>
       </div>
       <div>
-        <span class="strip-label">FOCUS</span>
-        <strong>Climate resilience</strong>
+        <span class="strip-label">ADAPTATION</span>
+        <strong>Climate Resilience</strong>
       </div>
       <div>
-        <span class="strip-label">FOCUS</span>
-        <strong>Research & innovation</strong>
+        <span class="strip-label">APPLIED TOOLKIT</span>
+        <strong>Geophysics & Tech</strong>
       </div>
       <div>
-        <span class="strip-label">FOCUS</span>
-        <strong>Youth empowerment</strong>
+        <span class="strip-label">EQUALITY</span>
+        <strong>Gender & Community</strong>
       </div>
     </section>
 
+    <!-- About Section -->
     <section class="section about-section" id="about">
       <div class="section-heading">
-        <p class="eyebrow">01 — ABOUT</p>
-        <h2>A professional profile built around water, people and possibility.</h2>
+        <p class="eyebrow">01 — ABOUT BERTHA</p>
+        <h2>A multidisciplinary career anchored in science, governance and community resilience.</h2>
       </div>
 
       <div class="about-grid">
         <div class="about-photo">
-          <img src="assets/images/about.jpg" alt="Bertha Magomere outdoors">
-          <div class="photo-note">Water & climate advocate</div>
+          <img src="assets/images/about.jpg" alt="Bertha Magomere in the field">
+          <div class="photo-note">Hydrogeologist • Water & Climate Advocate</div>
         </div>
 
         <div class="about-copy">
+          <!-- Conceptual Framework Callout -->
+          <div class="framework-banner">
+            <span class="framework-tag">CORE PHILOSOPHY</span>
+            <div class="framework-nodes">
+              <span class="node">Technology</span>
+              <span class="arrow">⇄</span>
+              <span class="node center-node">Water (H₂O)</span>
+              <span class="arrow">⇄</span>
+              <span class="node">Climate Change</span>
+            </div>
+            <div class="framework-sub">
+              <span class="arrow-down">↓</span>
+              <span class="node gender-node">Gender & Community Empowerment</span>
+            </div>
+          </div>
+
           <p class="lead">
-            Bertha Magomere is a Hydrogeologist & Accountant with an interest in
-            sustainable water solutions, climate change awareness and environmental resilience.
+            Bertha Magomere is a dedicated Hydrogeologist & Accountant advancing sustainable groundwater solutions, climate resilience, and gender-inclusive community empowerment.
           </p>
           <p>
-            Her work combines technical interests in water with leadership,
-            creativity, public speaking and community-focused innovation. She is
-            committed to inspiring and uplifting the next generation through
-            innovation, creativity and self-reliance.
+            Trained in both <strong>Water Resource Management (Water Institute)</strong> and <strong>Accounting & Finance (Tumaini University)</strong>, Bertha bridges the gap between field hydrology and financial governance. She applies specialized geophysical survey tools (IPI2Win, Interpex, PQWT detectors, magnetometers) alongside fiscal accounting to ensure that water infrastructure projects are both scientifically robust and financially viable.
+          </p>
+          <p>
+            As the Founder and CEO of <strong>Mimi Ni Maji Hub</strong>, an alumna of the <strong>SheTech Incubator</strong>, participant in the <strong>Girls Takeover</strong> initiative, and delegate at the <strong>East Africa Future Generation Tribunal</strong>, Bertha actively champions youth-led and gender-transformative climate initiatives across Tanzania.
           </p>
 
-          <div class="fact-grid">
-            <article>
-              <span class="fact-number">01</span>
-              <h3>Hydrogeology</h3>
-              <p>Water-focused technical knowledge and interest in sustainable resource management.</p>
-            </article>
-            <article>
-              <span class="fact-number">02</span>
-              <h3>Leadership</h3>
-              <p>Strategic planning, decision-making and supervision through initiative-led work.</p>
-            </article>
-            <article>
-              <span class="fact-number">03</span>
-              <h3>Communication</h3>
-              <p>Public speaking, presentations, program hosting and community engagement.</p>
-            </article>
-            <article>
-              <span class="fact-number">04</span>
-              <h3>Innovation</h3>
-              <p>Using creativity and youth-led initiatives to support the water sector.</p>
-            </article>
+          <!-- What Drives Me / Motives Callout -->
+          <div class="motives-box">
+            <h4>What Drives My Work</h4>
+            <p>
+              Grounded in community service, grassroots water walks (such as the Dodoma Water Walk for clean water consciousness), and the enduring ethos of Mwalimu J.K. Nyerere on self-reliance and public duty, Bertha is devoted to solving real-world challenges for communities most vulnerable to climate shocks.
+            </p>
           </div>
         </div>
       </div>
     </section>
 
+    <!-- Technical Skills & Geophysics Toolkit Section -->
+    <section class="section toolkit-section" id="toolkit">
+      <div class="section-heading split-heading">
+        <div>
+          <p class="eyebrow">02 — TECHNICAL EXPERTISE & TOOLKIT</p>
+          <h2>Rigorous scientific tools and financial disciplines.</h2>
+        </div>
+        <p>
+          Hands-on proficiency across hydrogeological modeling software, geophysical survey instrumentation, and financial management.
+        </p>
+      </div>
+
+      <div class="toolkit-grid">
+        <!-- Card 1: Software -->
+        <article class="toolkit-card">
+          <div class="toolkit-icon">
+            <svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-7 14h-2v-4H6v-2h4V7h2v4h4v2h-4v4z"/></svg>
+          </div>
+          <span class="toolkit-cat">GEOPHYSICS & MODELING SOFTWARE</span>
+          <h3>Subsurface Modeling</h3>
+          <ul class="toolkit-list">
+            <li><strong>IPI2Win Software:</strong> 1D Vertical Electrical Sounding (VES) resistivity curve interpretation & aquifer delineation.</li>
+            <li><strong>Interpex (IX1D):</strong> Advanced geoelectrical resistivity data inversion and multi-layer subsurface aquifer modeling.</li>
+            <li><strong>Hydrological Data Analysis:</strong> Data interpretation for catchment vulnerability, recharge, and water quality.</li>
+          </ul>
+        </article>
+
+        <!-- Card 2: Instruments -->
+        <article class="toolkit-card">
+          <div class="toolkit-icon">
+            <svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/></svg>
+          </div>
+          <span class="toolkit-cat">GEOPHYSICAL FIELD EQUIPMENT</span>
+          <h3>Field Instruments</h3>
+          <ul class="toolkit-list">
+            <li><strong>PQWT Water Detector:</strong> Automated multi-frequency natural electric field mapping for groundwater exploration.</li>
+            <li><strong>Proton Magnetometer:</strong> Subsurface geological structure, fault mapping, and magnetic anomaly surveys.</li>
+            <li><strong>Field Campaigns (I & II):</strong> Practical field borehole siting, resistivity array measurements, and water sampling.</li>
+          </ul>
+        </article>
+
+        <!-- Card 3: Finance -->
+        <article class="toolkit-card">
+          <div class="toolkit-icon">
+            <svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor"><path d="M11.8 10.9c-2.27-.59-3-1.2-3-2.15 0-1.09 1.01-1.85 2.7-1.85 1.78 0 2.44.85 2.5 2.1h2.21c-.07-1.72-1.12-3.3-3.21-3.81V3h-3v2.16c-1.94.42-3.5 1.68-3.5 3.61 0 2.31 1.91 3.46 4.7 4.13 2.5.6 3 1.48 3 2.41 0 .69-.49 1.79-2.7 1.79-2.06 0-2.87-.92-2.98-2.1h-2.2c.12 2.19 1.76 3.42 3.68 3.83V21h3v-2.15c1.95-.37 3.5-1.5 3.5-3.55 0-2.84-2.43-3.81-4.7-4.4z"/></svg>
+          </div>
+          <span class="toolkit-cat">FINANCIAL GOVERNANCE & ACCOUNTING</span>
+          <h3>Finance & Administration</h3>
+          <ul class="toolkit-list">
+            <li><strong>Accounting & Finance (Tumaini):</strong> Financial accounting, expenditure tracking, budgeting, and audit readiness.</li>
+            <li><strong>Resource Project Governance:</strong> Cost estimation and budget planning for donor and community water initiatives.</li>
+            <li><strong>Contract & Grant Compliance:</strong> Ensuring accountability and transparent stewardship in environmental projects.</li>
+          </ul>
+        </article>
+
+        <!-- Card 4: General Strengths -->
+        <article class="toolkit-card">
+          <div class="toolkit-icon">
+            <svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor"><path d="M16 11c1.66 0 2.99-1.34 2.99-3S17.66 5 16 5c-1.66 0-3 1.34-3 3s1.34 3 3 3zm-8 0c1.66 0 2.99-1.34 2.99-3S9.66 5 8 5C6.34 5 5 6.34 5 8s1.34 3 3 3zm0 2c-2.33 0-7 1.17-7 3.5V19h14v-2.5c0-2.33-4.67-3.5-7-3.5zm8 0c-.29 0-.62.02-.97.05 1.16.84 1.97 1.97 1.97 3.45V19h6v-2.5c0-2.33-4.67-3.5-7-3.5z"/></svg>
+          </div>
+          <span class="toolkit-cat">LEADERSHIP & ENGAGEMENT</span>
+          <h3>Core Competencies</h3>
+          <ul class="toolkit-list">
+            <li><strong>Executive Leadership:</strong> Vision setting, stakeholder management, and project execution at Mimi Ni Maji Hub.</li>
+            <li><strong>Collaborative Teamwork:</strong> Cross-functional team mobilization with students, technicians, and community leaders.</li>
+            <li><strong>Keynote Public Speaking:</strong> Confident, clear communication at major conferences, workshops, and youth forums.</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <!-- Programs & Global Initiatives Section -->
+    <section class="section initiatives-section" id="initiatives">
+      <div class="section-heading split-heading">
+        <div>
+          <p class="eyebrow">03 — PROGRAMS & INITIATIVES</p>
+          <h2>Active leadership across national and regional platforms.</h2>
+        </div>
+        <p>
+          Participation in recognized incubators, gender equality movements, climate policy tribunals, and innovation forums.
+        </p>
+      </div>
+
+      <div class="programs-chips-grid">
+        <!-- SheTech -->
+        <div class="program-badge-card">
+          <span class="prog-pill tech-pill">TECHNOLOGY & INNOVATION</span>
+          <h3>SheTech Incubator Program</h3>
+          <p>Selected participant in specialized incubator fostering female-led tech solutions, digital tools, and entrepreneurial thinking for environmental sectors.</p>
+        </div>
+
+        <!-- Girls Takeover -->
+        <div class="program-badge-card">
+          <span class="prog-pill gender-pill">GENDER & EMPOWERMENT</span>
+          <h3>Girls Takeover Initiative</h3>
+          <p>Championing female leadership, young women’s representation in decision-making spaces, and advocacy for gender-responsive water access.</p>
+        </div>
+
+        <!-- EA Tribunal -->
+        <div class="program-badge-card">
+          <span class="prog-pill climate-pill">CLIMATE GOVERNANCE & POLICY</span>
+          <h3>East Africa Future Generation Tribunal</h3>
+          <p>Engaging in high-level intergenerational environmental justice dialogues, advocating for policy reforms safeguarding water security for future generations.</p>
+        </div>
+
+        <!-- World Water Week -->
+        <div class="program-badge-card">
+          <span class="prog-pill water-pill">WATER SECTOR DIALOGUE</span>
+          <h3>World Water Week & National Water Conferences</h3>
+          <p>Contributing to national and regional discussions on sustainable catchment protection, groundwater management, and community water resilience.</p>
+        </div>
+
+        <!-- Innovation Talks -->
+        <div class="program-badge-card">
+          <span class="prog-pill startup-pill">INNOVATION & STARTUP FORUMS</span>
+          <h3>Tanzania Startup Week & Sahara Sparks</h3>
+          <p>Delivered innovation talks on youth-driven water ventures, creative solutions to climate risks, and pitching sustainable social enterprises.</p>
+        </div>
+
+        <!-- Water Communication -->
+        <div class="program-badge-card">
+          <span class="prog-pill comm-pill">PUBLIC ENGAGEMENT</span>
+          <h3>Water Communication & Community Advocacy</h3>
+          <p>Specialized presentations translating complex scientific hydrological findings into actionable community knowledge and policy advocacy.</p>
+        </div>
+      </div>
+
+      <!-- Photo Showcase -->
+      <div class="initiative-grid" style="margin-top: 40px;">
+        <article class="initiative-card initiative-large">
+          <img src="assets/images/innovation.png" alt="Bertha Magomere facilitating a collaborative activity">
+          <div class="initiative-overlay">
+            <span>INNOVATION & YOUTH INCUBATION</span>
+            <h3>Mimi Ni Maji Hub</h3>
+            <p>Fostering youth-driven innovation, scientific curiosity, and creative enterprise in sustainable water management.</p>
+          </div>
+        </article>
+
+        <article class="initiative-card">
+          <img src="assets/images/leadership.png" alt="Bertha Magomere working with a group">
+          <div class="initiative-overlay">
+            <span>COLLABORATIVE GOVERNANCE</span>
+            <h3>Collaborative Leadership</h3>
+            <p>Building participatory spaces for ideas, interdisciplinary learning, and collective stakeholder action.</p>
+          </div>
+        </article>
+
+        <article class="initiative-card">
+          <img src="assets/images/speaking.png" alt="Bertha Magomere speaking at an event">
+          <div class="initiative-overlay">
+            <span>COMMUNICATION & ADVOCACY</span>
+            <h3>Speaking & Engagement</h3>
+            <p>Public speaking, keynote presentations, and media hosting that make complex climate science relatable.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- Professional Experience Section -->
+    <section class="section experience-section" id="experience">
+      <div class="section-heading">
+        <p class="eyebrow">04 — EXPERIENCE</p>
+        <h2>Leadership with practical, community-facing execution.</h2>
+      </div>
+
+      <div class="timeline">
+        <!-- Role 1 -->
+        <article class="timeline-item">
+          <div class="timeline-marker">01</div>
+          <div class="timeline-content">
+            <span class="timeline-label">2026 — PRESENT • EXECUTIVE LEADERSHIP</span>
+            <h3>Founder and CEO</h3>
+            <h4 class="timeline-org">Mimi Ni Maji Hub</h4>
+            <p>
+              Leads a pioneering youth-led organization that champions innovation and creativity in the water sector.
+              Responsibilities include executive decision-making, strategic roadmap development, resource mobilization,
+              supervising field activities, and establishing youth mentorship pipelines in environmental resilience.
+            </p>
+          </div>
+        </article>
+
+        <!-- Role 2: TUCASA -->
+        <article class="timeline-item">
+          <div class="timeline-marker">02</div>
+          <div class="timeline-content">
+            <span class="timeline-label">PROJECT MANAGEMENT & LEADERSHIP</span>
+            <h3>Education & Project Management (PM) Lead</h3>
+            <h4 class="timeline-org">TUCASA (Tanzania Universities and Colleges Adventist Students Association)</h4>
+            <p>
+              Coordinated educational initiatives, structured project timelines, and led student welfare and community outreach programs.
+              Spearheaded youth capacity-building activities and managed volunteer teams executing student development projects across tertiary institutions.
+            </p>
+          </div>
+        </article>
+
+        <!-- Role 3: Water Sector Field Campaigns -->
+        <article class="timeline-item">
+          <div class="timeline-marker">03</div>
+          <div class="timeline-content">
+            <span class="timeline-label">FIELD HYDROGEOLOGY • PRACTICAL CAMPAIGNS</span>
+            <h3>Field Hydrogeology Investigator (Field Work I & II)</h3>
+            <h4 class="timeline-org">Water Sector Field Research Campaigns</h4>
+            <p>
+              Conducted in-situ geophysical explorations using PQWT groundwater detectors, magnetometers, and Vertical Electrical Soundings (VES).
+              Interpreted subsurface resistivity curves with IPI2Win and Interpex software to identify potential aquifers, evaluate salinity risks, and determine borehole locations.
+            </p>
+          </div>
+        </article>
+
+        <!-- Role 4: Student Field & Experience -->
+        <article class="timeline-item">
+          <div class="timeline-marker">04</div>
+          <div class="timeline-content">
+            <span class="timeline-label">2024 — 2025 • CONSULTANCY & MENTORSHIP</span>
+            <h3>Student Field & Experience Program Senior Consultant</h3>
+            <h4 class="timeline-org">Student Field and Experience Program</h4>
+            <p>
+              Connected university and college students to related internships and professional opportunities in environmental science and water sectors.
+              Delivered weekly presentations and workshops on career readiness, practical field competencies, and bridging academic knowledge with industry practice.
+            </p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- Climate Advocacy & Spoken Word Section (Videos) -->
+    <section class="section media-section" id="advocacy">
+      <div class="section-heading split-heading">
+        <div>
+          <p class="eyebrow">05 — CLIMATE ADVOCACY & SPOKEN WORD</p>
+          <h2>Communicating science through the power of spoken word.</h2>
+        </div>
+        <p>
+          Bertha uses poetry, storytelling, and digital media to bridge the gap between technical water science and public consciousness.
+        </p>
+      </div>
+
+      <div class="media-grid">
+        <!-- Video 1 -->
+        <article class="media-card">
+          <div class="video-wrapper">
+            <video controls preload="metadata" playsinline>
+              <source src="assets/videos/tumerithi-tuwarithishe.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+          </div>
+          <div class="media-details">
+            <div class="media-meta">
+              <span class="media-tag">SPOKEN WORD • CLIMATE ETHICS</span>
+              <span class="media-lang">Swahili & English</span>
+            </div>
+            <h3>Tumerithi Tuwarithishe</h3>
+            <p class="media-subtitle"><em>"We have inherited, let us pass it on."</em></p>
+            <p>
+              A stirring call for intergenerational stewardship. This piece reminds us that every groundwater abstraction,
+              drainage policy, and environmental choice made today determines the resilience of the world our children inherit.
+            </p>
+          </div>
+        </article>
+
+        <!-- Video 2 -->
+        <article class="media-card">
+          <div class="video-wrapper">
+            <video controls preload="metadata" playsinline>
+              <source src="assets/videos/a-guest-with-no-invitation.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+          </div>
+          <div class="media-details">
+            <div class="media-meta">
+              <span class="media-tag">ADVOCACY • WATER MANAGEMENT</span>
+              <span class="media-lang">Swahili & English</span>
+            </div>
+            <h3>A Guest With No Invitation</h3>
+            <p class="media-subtitle"><em>Addressing climate shocks and modern water infrastructure.</em></p>
+            <p>
+              Spotlighting the urgent need for proactive water management—from flood risk mitigation and aquifer monitoring
+              to decentralized rainwater harvesting systems—rallying leaders and communities to prepare sustainably.
+            </p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- Research & Publications Section -->
     <section class="section research-section" id="research">
       <div class="section-heading split-heading">
         <div>
-          <p class="eyebrow">02 — RESEARCH & PUBLICATIONS</p>
-          <h2>A dedicated space for scientific work.</h2>
+          <p class="eyebrow">06 — RESEARCH & PUBLICATIONS</p>
+          <h2>Evidence-based solutions for water and climate resilience.</h2>
         </div>
         <p>
-          Research papers, journal articles, conference papers and reports can be
-          added here as Bertha's publication record grows.
+          A dedicated repository for Bertha's scientific research papers, journal articles, conference proceedings, and technical reports.
         </p>
       </div>
 
@@ -152,173 +481,165 @@
         <button class="filter" data-filter="research-paper">Research Papers</button>
         <button class="filter" data-filter="journal-article">Journal Articles</button>
         <button class="filter" data-filter="conference-paper">Conference Papers</button>
-        <button class="filter" data-filter="report">Reports</button>
+        <button class="filter" data-filter="report">Technical Reports</button>
       </div>
 
       <div class="publication-grid" id="publicationGrid"></div>
 
       <div class="publication-empty" id="publicationEmpty">
-        <span class="empty-icon">+</span>
-        <h3>Publications will appear here</h3>
-        <p>
-          Add verified titles, abstracts, authors, publication years and PDF/DOI
-          links to <code>data/publications.js</code>.
-        </p>
-      </div>
-    </section>
-
-    <section class="section experience-section" id="experience">
-      <div class="section-heading">
-        <p class="eyebrow">03 — EXPERIENCE</p>
-        <h2>Leadership with a practical, community-facing approach.</h2>
-      </div>
-
-      <div class="timeline">
-        <article class="timeline-item">
-          <div class="timeline-marker">01</div>
-          <div class="timeline-content">
-            <span class="timeline-label">FOUNDER & CEO</span>
-            <h3>Mimi Ni Maji Hub</h3>
-            <p>
-              Leads a youth-led organization fostering innovation and creativity
-              in the water sector, with responsibilities including decision-making,
-              strategic planning and supervision of daily activities.
-            </p>
-          </div>
-        </article>
-
-        <article class="timeline-item">
-          <div class="timeline-marker">02</div>
-          <div class="timeline-content">
-            <span class="timeline-label">PROGRAM SENIOR CONSULTANT</span>
-            <h3>Student Field & Experience</h3>
-            <p>
-              Connects university and college students to part-time jobs and
-              internship opportunities while delivering weekly presentations
-              on the importance of gaining practical experience before graduation.
-            </p>
-          </div>
-        </article>
-      </div>
-    </section>
-
-    <section class="section initiatives-section" id="initiatives">
-      <div class="section-heading split-heading">
-        <div>
-          <p class="eyebrow">04 — INITIATIVES</p>
-          <h2>Work that moves beyond the page.</h2>
+        <div class="empty-icon">
+          <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor">
+            <path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-5 14H7v-2h7v2zm3-4H7v-2h10v2zm0-4H7V7h10v2z"/>
+          </svg>
         </div>
+        <span class="empty-badge">FORTHCOMING PUBLICATIONS</span>
+        <h3>Scientific Papers & Reports in Progress</h3>
         <p>
-          A visual showcase for the initiatives, collaboration and public-facing
-          work that complement Bertha's academic and professional profile.
+          Bertha's upcoming research papers on groundwater resilience, catchment vulnerability, and water governance are currently undergoing final conference and peer-review preparations.
         </p>
-      </div>
-
-      <div class="initiative-grid">
-        <article class="initiative-card initiative-large">
-          <img src="assets/images/innovation.png" alt="Bertha Magomere facilitating a collaborative activity">
-          <div class="initiative-overlay">
-            <span>INNOVATION</span>
-            <h3>Mimi Ni Maji Hub</h3>
-            <p>Youth-led creativity and innovation in the water sector.</p>
-          </div>
-        </article>
-
-        <article class="initiative-card">
-          <img src="assets/images/leadership.png" alt="Bertha Magomere working with a group">
-          <div class="initiative-overlay">
-            <span>LEADERSHIP</span>
-            <h3>Collaborative leadership</h3>
-            <p>Creating space for ideas, learning and participation.</p>
-          </div>
-        </article>
-
-        <article class="initiative-card">
-          <img src="assets/images/speaking.png" alt="Bertha Magomere speaking at an event">
-          <div class="initiative-overlay">
-            <span>COMMUNICATION</span>
-            <h3>Speaking & engagement</h3>
-            <p>Presentations, public speaking and advocacy.</p>
-          </div>
-        </article>
+        <div class="empty-cta">
+          <a class="button button-primary button-small" href="#contact">Inquire for Pre-prints or Collaboration <span>→</span></a>
+        </div>
       </div>
     </section>
 
+    <!-- Recognition Section -->
     <section class="section recognition-section" id="recognition">
       <div class="recognition-grid">
         <div class="recognition-copy">
-          <p class="eyebrow">05 — RECOGNITION</p>
+          <p class="eyebrow">07 — RECOGNITION & HONORS</p>
           <span class="recognition-year">2025</span>
           <h2>Young Scientific Researcher of the Year</h2>
+          <p class="recognition-venue">Awarded at the Maji Scientific Conference</p>
           <p>
-            Recognition that forms an important part of Bertha's developing
-            scientific and professional profile.
+            This prestigious accolade honors Bertha's rigorous dedication to water research, environmental innovation,
+            and evidence-based solutions in water and climate science. The award reflects her commitment to advancing
+            scientific excellence while mentoring young researchers and driving impactful community change.
           </p>
-          <a class="text-link" href="#research">View research space <span>→</span></a>
+          <a class="text-link" href="#research">Explore Research Portfolio <span>→</span></a>
         </div>
 
         <div class="recognition-image">
-          <img src="assets/images/awards.png" alt="Bertha Magomere receiving recognition at a Maji Scientific Conference">
-          <span class="image-caption">Maji Scientific Conference</span>
+          <img src="assets/images/awards.png" alt="Bertha Magomere receiving Young Scientific Researcher of the Year award">
+          <span class="image-caption">Maji Scientific Conference Award Ceremony</span>
         </div>
       </div>
     </section>
 
-    <section class="section education-section" id="education">
-      <div class="section-heading">
-        <p class="eyebrow">06 — EDUCATION & EXPERTISE</p>
-        <h2>Academic foundations and practical strengths.</h2>
-      </div>
-
-      <div class="education-grid">
-        <article class="education-card">
-          <span>01</span>
-          <h3>Water Resource Management</h3>
-          <p>Water Institute</p>
-        </article>
-        <article class="education-card">
-          <span>02</span>
-          <h3>Hydrogeology</h3>
-          <p>Water-focused technical discipline</p>
-        </article>
-        <article class="education-card">
-          <span>03</span>
-          <h3>Accounting & Finance</h3>
-          <p>Tumaini University</p>
-        </article>
-        <article class="education-card">
-          <span>04</span>
-          <h3>Core strengths</h3>
-          <p>Leadership • Creativity • Public Speaking • Critical Thinking • Innovation</p>
-        </article>
-      </div>
-    </section>
-
+    <!-- Contact & Connect Section -->
     <section class="contact-section" id="contact">
       <div class="contact-inner">
-        <div>
-          <p class="eyebrow">07 — CONTACT</p>
-          <h2>Let's connect around ideas that matter.</h2>
+        <div class="contact-text-col">
+          <p class="eyebrow">08 — GET IN TOUCH</p>
+          <h2>Let's build sustainable solutions together.</h2>
           <p>
-            For professional opportunities, research collaboration, speaking
-            engagements or water and climate initiatives, get in touch.
+            Whether you are seeking hydrogeological consulting, research collaboration, a keynote speaker for environmental conferences, or looking to partner with <strong>Mimi Ni Maji Hub</strong>, I look forward to connecting.
           </p>
+
+          <div class="contact-details">
+            <div class="contact-item">
+              <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+              <a href="mailto:magomerebertha@gmail.com">magomerebertha@gmail.com</a>
+            </div>
+
+            <div class="contact-item">
+              <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
+              <a href="tel:+255675112547">+255 675 112 547</a>
+            </div>
+
+            <div class="contact-item">
+              <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+              <span>Dar es Salaam, Tanzania</span>
+            </div>
+          </div>
+
+          <!-- Social Buttons -->
+          <div class="contact-social-row">
+            <a class="social-pill" href="https://wa.me/255675112547" target="_blank" rel="noopener" aria-label="Direct message on WhatsApp">
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor">
+                <path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.711 2.599 2.679-.702c.97.53 1.761.816 2.781.816 3.18 0 5.767-2.587 5.767-5.766.001-3.182-2.585-5.8-5.767-5.8zm3.377 8.205c-.141.396-.713.743-1.002.774-.27.028-.619.124-2.033-.464-1.705-.708-2.778-2.457-2.864-2.57-.084-.115-.689-.918-.689-1.752 0-.834.437-1.244.593-1.414.155-.17.339-.212.452-.212.113 0 .226.002.325.006.104.005.244-.039.381.292.141.339.48 1.173.523 1.258.042.085.071.184.014.298-.056.113-.085.184-.17.283-.085.099-.178.222-.254.298-.085.085-.174.177-.075.347.099.17.439.724.942 1.172.648.577 1.194.756 1.364.841.17.085.269.071.368-.042.099-.113.424-.495.537-.665.113-.17.226-.142.381-.085.156.057.989.466 1.159.551.17.085.283.127.325.198.042.071.042.41-.099.806zM12 2C6.477 2 2 6.477 2 12c0 1.954.561 3.78 1.533 5.325L2 22l4.81-1.493C8.28 21.439 10.07 22 12 22c5.523 0 10-4.477 10-10S17.523 2 12 2zm0 18.2c-1.636 0-3.15-.487-4.422-1.325l-.317-.208-3.085.958.977-3.007-.225-.333C4.04 14.975 3.5 13.535 3.5 12c0-4.687 3.813-8.5 8.5-8.5s8.5 3.813 8.5 8.5-3.813 8.5-8.5 8.5z"/>
+              </svg>
+              <span>WhatsApp Direct</span>
+            </a>
+            <a class="social-pill" href="https://www.linkedin.com/in/bertha-magomere-a64207370?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" rel="noopener" aria-label="LinkedIn Profile">
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z"/></svg>
+              <span>LinkedIn</span>
+            </a>
+            <a class="social-pill" href="https://www.instagram.com/bertha_magomere?igsh=aXR5Z251ZWxzZ2pw" target="_blank" rel="noopener" aria-label="Instagram Profile">
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+              <span>Instagram</span>
+            </a>
+          </div>
         </div>
 
-        <div class="contact-details">
-          <a href="mailto:magomerebertha@gmail.com">magomerebertha@gmail.com</a>
-          <a href="tel:+255675112547">+255 675 112 547</a>
-          <span>Dar es Salaam, Tanzania</span>
+        <!-- Interactive Contact Form -->
+        <div class="contact-form-wrapper">
+          <form class="portfolio-form" id="contactForm" name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+            <!-- Netlify Form Hidden Fields -->
+            <input type="hidden" name="form-name" value="contact">
+            <p class="hidden-field" style="display:none;">
+              <label>Don’t fill this out if you're human: <input name="bot-field"></label>
+            </p>
+
+            <h3 class="form-title">Send a Message</h3>
+            <p class="form-subtitle">Direct inquiries, project proposals, or speaking invitations.</p>
+
+            <div class="form-group">
+              <label for="name">Your Name <span class="required">*</span></label>
+              <input type="text" id="name" name="name" placeholder="e.g. Dr. Jane Doe" required>
+            </div>
+
+            <div class="form-group">
+              <label for="email">Email Address <span class="required">*</span></label>
+              <input type="email" id="email" name="email" placeholder="jane.doe@organization.org" required>
+            </div>
+
+            <div class="form-group">
+              <label for="subject">Purpose / Subject</label>
+              <select id="subject" name="subject">
+                <option value="Research & Collaboration">Research Collaboration</option>
+                <option value="Hydrogeological Consulting">Hydrogeological Consulting</option>
+                <option value="Keynote / Speaking Engagement">Speaking Engagement</option>
+                <option value="Mimi Ni Maji Hub Partnership">Mimi Ni Maji Hub Partnership</option>
+                <option value="General Professional Inquiry">General Professional Inquiry</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="message">Message <span class="required">*</span></label>
+              <textarea id="message" name="message" rows="5" placeholder="Share brief context about your inquiry or project..." required></textarea>
+            </div>
+
+            <button type="submit" class="button button-submit" id="submitBtn">
+              <span class="btn-text">Send Message</span>
+              <span class="btn-icon">→</span>
+            </button>
+
+            <!-- Status Alert Box -->
+            <div class="form-feedback" id="formFeedback" role="alert" aria-live="polite"></div>
+          </form>
         </div>
       </div>
     </section>
   </main>
 
+  <!-- Site Footer -->
   <footer class="site-footer">
-    <span>© <span id="year"></span> Bertha Magomere</span>
-    <a href="#top">Back to top ↑</a>
+    <div class="footer-left">
+      <span>© <span id="year"></span> <strong>Bertha Magomere</strong>. All Rights Reserved.</span>
+      <span class="footer-sub">Hydrogeologist & Accountant • Dar es Salaam, Tanzania</span>
+    </div>
+    <div class="footer-right">
+      <a href="#about">About</a>
+      <a href="#toolkit">Toolkit</a>
+      <a href="#initiatives">Programs</a>
+      <a href="#advocacy">Advocacy</a>
+      <a href="#contact">Contact</a>
+      <a href="#top" class="back-to-top">Back to top ↑</a>
+    </div>
   </footer>
 
+  <!-- Scripts -->
   <script src="data/publications.js"></script>
   <script src="main.js"></script>
 </body>
